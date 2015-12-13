@@ -1,8 +1,8 @@
 language: csharp
-solution: TessClass.sln
+solution: TestClass.sln
 install:
-  - nuget restore TessClass.sln
+  - nuget restore TestClass.sln
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 script:
-  - xbuild /p:Configuration=Release TessClass.sln
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./TessClass/bin/Release/TessClass.Tests.dll
+  - xbuild /p:Configuration=Release TestClass.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./TestClass/bin/Release/TestClass.Tests.dll
