@@ -11,7 +11,7 @@ namespace CalculatorSample
         //Ham cua A viet
         public int Cong(int a, int b)
         {
-            return a - b;
+            return a + b;
         }
 
 
